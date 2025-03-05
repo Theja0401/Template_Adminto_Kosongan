@@ -1,0 +1,241 @@
+.action-modal-button{
+    border-radius: 25px;
+    background-color: var(--primary-color);
+    padding: 7.2px 14.4px;
+}
+
+.action-modal-button:where(:active, :hover){
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+}
+
+.action-reject-button{
+    border-radius: 25px;
+    background-color: var(--red-color) !important;
+}
+
+@media(max-width: 768px){
+    .action-reject-button, .action-modal-button{
+        font-size: var(--xxs-text);
+    }
+}
+
+.action-reject-button:where(:active, :hover){
+    color: var(--white-color);
+    background-color: var(--light-red-color);
+}
+
+.bg-primary-color{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.bg-primary-color:where(:hover, :active){
+    background-color: var(--secondary-color);
+}
+
+.bg-secondary-color{
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+.main-content-head{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--white-color);
+    padding: 10px 0 20px;
+}
+
+.main-content-head .input-group{
+    width: 100%;
+}
+
+.main-content-head .input-group .form-control{
+    height: 100%;
+    padding: 10px;
+    border-radius: 25px 0 0 25px;
+}
+
+.main-content-head .input-group-append{
+    background-color: var(--primary-color);
+    border-radius: 0 25px 25px 0;
+}
+
+.main-content-head .input-group-append:hover{
+    background-color: var(--secondary-color);
+}
+
+.main-content .table .navigation-head-table a{
+    color: var(--primary-color);
+}
+
+.content-page-top a{
+    font-size: var(--xl-text);
+    background-color: var(--primary-color);
+    border: none;
+}
+
+.content-page-top a:hover, .content-page-top a:active{
+    background-color: var(--secondary-color);
+}
+
+/* ********************************
+    Filter Modal
+******************************** */
+
+.main-content-head .filter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    position: relative;
+}
+
+.main-content-head .filter span{
+    margin: 0;
+    padding: 10px 15px;
+}
+
+.main-content-head .filter-modal{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--white-color);
+    padding: 10px 15px;
+    box-shadow: 0 2px 4px 2px rgba(51,51,51,.6);
+    animation: .5s fade-in !important;
+    border-radius: 4px;
+    width: 320px;
+    display: none;
+    z-index: 99;
+}
+
+.filter-modal .form-control{
+    border-radius: 4px;
+    width: 100%;
+}
+
+.filter-modal .list-filter{
+    margin: 10px 0;
+}
+
+.filter-modal .list-filter p{
+    margin: 0;
+}
+
+.filter-modal .list-filter .filter-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 5px;
+}
+
+.filter-modal .list-filter .filter-buttons button{
+    border-radius: 25px;
+    padding: 8px 20px;
+    border: 1px solid var(--primary-color);
+}
+
+.filter-modal button.active, .filter-modal button:hover{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: 1px solid var(--primary-color);
+}
+
+.filter-modal #btnFilter:hover{
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+.main-content-head .filter:hover .filter-modal{
+    display: block;
+}
+
+.main-content-head .filter span:where(:hover, :active){
+    color: var(--primary-color);
+}
+
+/* ********************************
+    card Style
+******************************** */
+
+.negosiator .detail-group{
+    padding: 5px 0;
+}
+
+.negosiator .detail-group span{
+    font-size: var(--xxs-text);
+    color: var(--grey-color);
+}
+
+.negosiator .detail-group p{
+    font-size: var(--sm-text);
+    font-weight: var(--fw-semibold);
+    color: var(--dark-color);
+    margin: 0;
+}
+
+.negosiator .card-navigation a > i{
+    font-size: var(--giant-text);
+    color: var(--primary-color);
+}
+
+.negosiator .card-navigation a[title]:hover:after{
+    content: attr(title);
+    background-color: rgba(81,81,81, .8);
+    font-size: var(--xs-text);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    color: var(--white-color);
+    border-radius: 4px;
+}
+
+/* ********************************
+    Modal Style
+******************************** */
+.modal .modal-body .form-content{
+    display: none;
+}
+
+.modal .modal-body .form-content.active{
+    display: block;
+}
+
+.modal .button-group{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal .button-group button{
+    width: 100%;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    font-size: var(--fw-semibold);
+}
+
+.modal .button-group button.active, .modal .button-group button:hover{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+/* ********************************
+    Animation Keyframe
+******************************** */
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+
+.image-fit{
+    object-fit: contain;
+    aspect-ratio: auto 2/1;
+    width: 100%;
+    padding: 5px !important;
+}

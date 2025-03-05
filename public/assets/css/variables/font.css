@@ -1,0 +1,24 @@
+:root{
+    --xxs-text: 12px;
+    --xss-text : 13px;
+    --xs-text: 14px;
+    --sm-text: 16px;
+    --md-text: 18px;
+    --lg-text: 20px;
+    --xl-text: 24px;
+    --xxl-text: 28px;
+    --title-text: 32px;
+    --giant-text: 40px;
+    --x-giant-text: 48px;
+    --xl-giant-text: 60px;
+
+    --fw-thin: 100;
+    --fw-extralight: 200;
+    --fw-light: 300;
+    --fw-normal: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-extrabold: 800;
+    --fw-black: 900;
+}
